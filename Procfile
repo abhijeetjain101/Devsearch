@@ -1,1 +1,1 @@
-web: gunicorn devsearch-jeet.wsgi
+web: gunicorn devsearch.wsgi
