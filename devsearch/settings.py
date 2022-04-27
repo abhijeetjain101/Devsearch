@@ -173,9 +173,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-CLOUDINARY_STORAGE = { 'CLOUD_NAME': 'dt7azg9og', 'API_KEY': 894736995689677'', 'API_SECRET': '-qTsTP7TKUlJzoD8L34UHsS96tE' }
-
-CLOUDINARY_URL=cloudinary://894736995689677:-qTsTP7TKUlJzoD8L34UHsS96tE@dt7azg9og
+CLOUDINARY_STORAGE = { 'CLOUD_NAME': 'dt7azg9og', 'API_KEY': '894736995689677', 'API_SECRET': '-qTsTP7TKUlJzoD8L34UHsS96tE' }
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
