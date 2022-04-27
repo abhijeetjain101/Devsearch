@@ -8,6 +8,7 @@ from django.core.mail import send_mail
 from django.conf import settings
 
 # @receiver(post_save, sender=Profile)
+
 def createProfile(sender, instance, created, **kwargs):
     print('Profile signal triggered')
     if created:
