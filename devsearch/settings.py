@@ -29,9 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0jtz6fn&+0y3q6&3$ef#ap^bd@wqsy2bb2^es7$vxf!7o9^17s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['devsearch-jeet.herokuapp.com/']
+ALLOWED_HOSTS = ['devsearch-jeet.herokuapp.com/', "localhost"]
 
 
 # Application definition
@@ -171,9 +171,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-CLOUDINARY_STORAGE = { 'CLOUD_NAME': 'dt7azg9og', 'API_KEY': '894736995689677', 'API_SECRET': '-qTsTP7TKUlJzoD8L34UHsS96tE' }
+# CLOUDINARY_STORAGE = {
+#      'CLOUD_NAME': 'dt7azg9og', 
+#      'API_KEY': '894736995689677', 
+#      'API_SECRET': '-qTsTP7TKUlJzoD8L34UHsS96tE'
+#     }
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
