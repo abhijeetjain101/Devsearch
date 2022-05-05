@@ -164,11 +164,11 @@ EMAIL_HOST_PASSWORD = ''
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-    # BASE_DIR / 'static'
-]
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
 
+# Try1
 # if DEBUG:
 #     STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, 'static')
@@ -177,11 +177,19 @@ STATICFILES_DIRS = [
 # else:
 #     # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 #     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+# Try2
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = "/static/"
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
    
     
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # STATIC_ROOT = BASE_DIR / 'static'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
