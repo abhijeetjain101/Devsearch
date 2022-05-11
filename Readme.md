@@ -6,7 +6,7 @@
 - HTML / CSS
 
 ### Developer Staff
-- [h4cktivist](https://github.com/h4cktivist)
+- [abhijeetjain101](https://github.com/abhijeetjain101)
 - Templates for frontend were taken from [divanov11/Django-2021](https://github.com/divanov11/Django-2021)
 
 ### Website Features
